@@ -1,5 +1,120 @@
 function App()
 {
+  if(true)
+  {
+var v=100;
+let l=200;
+const c=300;
+v++;
+l++;
+console.log("Let:"+l);
+//c++
+//console.log("const:"+c);
+
+
+  }
+
+  return(<>
+  <h1> variable:global:{v}</h1>
+  <h1> does not work let and const:because local</h1>
+  
+  
+  </>)
+}
+export default App
+
+
+/*function App()
+{
+  let myfun=(a,b,c)=>
+  {
+    var tot=a+b+c
+document.getElementById("res").innerHTML=`<h2>Total:${tot}</h2>`;
+  }
+
+  return(
+    <>
+    <h3>Arrow function with parameters</h3>
+    <button onClick={()=>myfun(10,30,50)}>click it</button>
+<div id="res"></div>
+    </>
+  )
+}
+export default App
+
+
+
+/*function App()
+{
+  let myfun=()=>
+  {
+document.getElementById("res").innerHTML="congratulations";
+  }
+
+  return(
+    <>
+    <h3>Arrow function without using parameters</h3>
+    <button onClick={myfun}>click it</button>
+<div id="res"></div>
+    </>
+  )
+}
+export default App
+
+/*import myimg from'./images/2.jpg'
+function App()
+{
+  return(
+    <>
+    <h2>Image demo using path as expression</h2>
+    <img src={myimg} width="75%" height="auto" alt="path is wrong"></img>
+    </>
+  )
+
+}
+export default App
+
+
+/*function App()
+{
+  var a=290
+  var b=900
+  var c=700
+  return(
+    <>
+    <h1>biggest among 3 no's using condition or teranary operator</h1>
+    <h1>biggest number{(a>b&&a>c)?a:(b>a&&b>c)?b:c}</h1>
+    
+    </>
+  )}
+export default App
+
+
+
+
+
+
+
+/*function App()
+
+{
+  var a=100
+  var b=200
+  return(
+    <>
+    <h1>Biggest among 2 no's using conditional or ternanary operator</h1>
+    <h1>Biggest number:{a>b?a:b}</h1>
+    </>
+  )
+}
+export default App
+
+
+
+
+
+/*function App()
+{
   //javascript code here
 
   var a=20
@@ -13,7 +128,7 @@ var c="Brindha"
   )
 
 }
-export default App
+export default App*/
 
 
 

@@ -1,10 +1,44 @@
-import React from "react";
+function App()
+{
+  //javascript code here
+
+  var a=20
+  var b=50
+var c="Brindha"
+  return(
+    <>
+<h1>Total:{a+b}</h1>
+<marquee bgcolor='lightgreen'><font size='9'>{c}</font></marquee>
+    </>
+  )
+
+}
+export default App
+
+
+
+/*import React from "react";
+class Parent extends React.Component
+{
+  render()
+  {
+    return(
+      <>
+      <h1>this is parent class</h1>
+      <h1>this is parent class</h1>
+      </>
+    )
+  }
+}
 class App extends React.Component
+
+
 {
   render()
   {
     return (
       <>
+      <Parent/>
       <center>
       <h1>HI Welcome</h1>
     <h1>  Learning React js</h1>
@@ -13,13 +47,13 @@ class App extends React.Component
 
 Ut nisi magna excepteur ad laborum ea aliqua aute consectetur nostrud nostrud nisi Lorem deserunt. Ut fugiat et excepteupariatur nisi magna ipsum. Sit elit sunt laboris eiusmod ut veniam ea adipisicing cupidatat non consequat nostrud.
 
-Occaecat incididunt Lorem nisi cupidatat nostrud enim sunt sint quis ut do aute voluptate. Adipisicing cupidatat sunt pariatur aute aliqua exercitation ad et anim fugiat. Velit sit consectetur ullamco excepteur. Exercitation adipisicing proident velit excepteur tempor consectetur irure. Esse qui id sit cillum eu sit dolor. Mollit ut pariatur labore est proident quis proident magna. Voluptate cillum laboris duis pariatur velit amet nisi magna ullamco. tempor nisi. Dolore est aliqua id tempor magna. Ullamco esse incididunt velit reprehenderit deserunt deserunt nulla laboris aliquip. Velit deserunt sint ut tempor veniam occaecat ea ut magna irure consectetur excepteur. Id pariatur officia nostrud laboris duis quis aute amet eiusmod magna minim quis. Do incididunt deserunt quis enim. Incididunt officia exercitation excepteur Lorem dolor velit cupidatat aliqua laborum minim anim.</p>
+Occaecat incididunt Lorem nisi cupidatat nostrud enim sunt sint quis ut do aute voluptate. Adipisicing cupidatat sunt pariatur aute aliqua exercitation ad et anim fugiat. Velit sit ullamco excepteur. Exercitation adipisicing proident velit excepteur tempor consectetur irure. Esse qui id sit cillum eu sit dolor. Mollit ut pariatur labore est proident quis proident magna. Voluptate cillum laboris duis pariatur velit amet nisi magna ullamco. tempor nisi. Dolore est aliqua id tempor magna. Ullamco esse incididunt velit reprehenderit deserunt deserunt nulla laboris aliquip. Velit deserunt sint ut tempor veniam occaecat ea ut magna irure consectetur excepteur. Id pariatur officia nostrud laboris duis quis aute amet eiusmod magna minim quis. Do incididunt deserunt quis enim. Incididunt officia exercitation excepteur Lorem dolor velit cupidatat aliqua laborum minim anim.</p>
       </>
     )
   }
 }
 export default App
-
+*/
 
 
 

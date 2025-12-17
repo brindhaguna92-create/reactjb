@@ -1,5 +1,268 @@
 function App()
 {
+  var arr=[11,22,33,44,55,66,77,88,99,100]
+  var sum=0
+  var max=arr[0]
+return(
+
+  <>
+  <h1>React looping or map methos</h1>
+  <h1>{arr[0]}
+    {arr[1]}
+    {arr[2]}
+    {arr[3]}
+{arr[4]}
+{arr[5]}
+{arr[6]}
+{arr[7]}
+{arr[8]}
+  </h1>
+  <h2>new model map (loop)</h2>
+ {arr.map((v)=>v)}
+ 
+ 
+
+ {arr.map((v)=><>
+ {v}<br></br>
+ </>)}
+
+<ol type="1">
+ {arr.map((v)=>
+ <li>{v}</li>
+)}</ol>
+
+<div style={{display:"none"}}>
+
+{arr.map((item)=><>{sum=sum+item}<br></br></>)}
+</div>
+<h1>Sum of array:{sum}</h1>
+<div style={{display:"none"}}>
+{arr.map((v)=><>{max<v&& <>{max=v}</>}
+
+
+
+</>)}
+</div>
+<h1>biggest number in array:{max}</h1>
+
+ </>)
+ }
+export default App
+
+
+
+/*function App()
+{
+  var arr=[11,22,33,44,55,66]
+  var[v1,,v2,...v3]=arr//(... =>spread operator=it takes balance values)
+  //(,, it skips the value)
+  return(
+  <>
+  <h1>Spread OPerator</h1>
+  <h3>indexof 0:{v1}</h3>
+    <h3>indexof 1:{v2}</h3>
+ <h3>indexof 3:{v3}</h3>
+   
+
+
+  
+  </>)
+}
+export default App
+
+
+
+
+/*function App()
+{
+  var arr=[11,22,33,44,55,66]
+  return(
+  <>
+  <h1>Spread OPerator</h1>
+  <h3>indexof 0:{arr[0]}</h3>
+    <h3>indexof 1:{arr[1]}</h3>
+ <h3>indexof 3:{arr[3]}</h3>
+   <h3>indexof 5:{arr[5]}</h3>
+      <h3>indexof 6:{arr[6]}</h3>
+
+
+  
+  </>)
+}
+export default App
+
+
+
+/*function App()
+{
+  var res="fail"
+var average=85
+  return(<>
+
+  <h1>react nested if statement</h1>
+
+  <h1>{
+    (res==="pass"&&
+  ((average>=85&&"Grade o")||
+  (average>=75&&"Grade A")||
+  (average>=65&&"Grade B")||
+  (average>=55&&"Grade C")||
+  (average>=45&&"Grade E")||
+  "FAiR"))||
+  "no  pass because of fail"}</h1>
+  
+  </>)
+}
+export default App
+
+
+
+
+
+
+/*function App()
+{
+var unit=105
+
+
+return(
+  <>
+  <h1>electicity Bill</h1>
+  <h1>{(unit<=100&&"rupees 0")||
+  (unit>=101&&unit<=125&&"rupees:50")||
+  (unit>=126&&unit<=200&&"rupees:"+(unit-100)*2)||
+  (unit>=201&&unit<=300&&"rupees:"+200+(unit-200)*3)||
+  (unit<=301&&unit<=400&&"rupees:"+500+(unit-300)*4)|| //310=100+100+100+(unit-300)*4//0+
+  ("rupees:"+(900+(unit-400)*5))}</h1>        
+  
+  
+  </>
+  )
+}
+export default App
+
+
+
+
+
+
+
+
+
+/*function App()
+{
+var average=45
+  return(<>
+  <h1>react simple if else if statement</h1>
+  <h1>{(average>=85&&"outstanding")||(average>=75&&"excellent")||(average>=65&&"very good")||(average>=55&&"good")||(average>=45&&"fair")}</h1>
+  
+  </>)
+}
+export default App
+/*function App()
+{
+var year=2001
+  return(
+    <>
+    <h1>year is leap year or not</h1>
+    <h1>{year%4==0&&"leap year"||"non leapyear"}</h1>
+    
+    </>
+  )
+}
+export default App
+
+
+
+/*function App()
+{
+  var a=8
+   return(<>
+  <h1>given no is positive or negative or null</h1>
+  <h1>{(a>0 &&"positive")||(a<0&&"negative")||(a==0&&"zero")}</h1>
+  </>)
+}
+export default App
+
+
+
+
+/*function App()
+{
+var age=25
+  return(
+    <>
+    
+    <h1>given age is eligible to vote or not</h1>
+    <h1>{(age>18&&"eligible")||"not eligible"}</h1>
+    </>
+  )
+}
+export default App
+
+
+
+
+
+
+
+/*function App()
+{
+  var num=9
+  return(
+  <>
+  <h1>to find even or odd</h1>
+  <h1>{((num%2==0) &&"even")||"odd"}</h1>
+  
+  
+  
+  </>)
+}
+export default App
+
+
+
+
+
+
+
+
+/*function App()
+{
+var mark=35
+
+return(
+  <>
+  <h2>React Simple if statement</h2>
+  <h2>{(mark>45&&"pass")||"fail"}</h2>
+  </>
+)
+}
+export default App
+
+
+
+
+
+
+
+/*function App()
+{
+var mark=89
+
+return(
+  <>
+  <h2>React Simple if statement</h2>
+  <h2>{mark>45&&"pass"}</h2>
+  </>
+)
+}
+export default App
+
+
+
+/*function App()
+{
   if(true)
   {
 var v=100;

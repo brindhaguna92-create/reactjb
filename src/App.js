@@ -1,8 +1,191 @@
+//Finding DATATYPE
+function App(props)
+{
+var a=props.data.rno;
+var b=props.data.sname;
+var c=props.data.mark;
+var d=props.data.ismarried;
+var e=props.data.location;
+var f=props.data.hobbies
+
+
+return(
+  <>
+  <h3>type of rno:{typeof(a)}</h3>
+  <h3>type of sname:{typeof(b)}</h3>
+  <h3>type of mark:{typeof(c)}</h3>
+  <h3>type of  is married:{typeof(d)}</h3>
+  <h3>type of location:{typeof(e)}</h3>
+  <h3>type of hobbies:{typeof(f)}</h3>
+  <h3>type of mark:{Array.isArray(c)?"it is array":"it is jsonobject"}</h3>
+  <h3>type of hobbies:{Array.isArray(f)?"it is array":"it is json object"}</h3>
+  
+  
+  
+  </>
+)}
+
+export default App
+
+
+
+
+
+
+
+
+
+
+/*import parse from 'html-react-parser'
+
+function App(props)
+{
+
+var ans=""
+    for(var s in props.data)
+    {
+ans=ans+`<li>${s}=${props.data[s]}</li>`
+console.log(s)
+
+    }
+
+return(
+  <>
+  <h1>
+  {parse("<ol>"+ans+"</ol>"
+  )}</h1>
+  </>
+)
+
+}
+export default App
+
+
+
+/*import React from "react";
+import parse from 'html-react-parser';
+class App extends React.Component
+{
+
+  constructor(props)
+  {
+    var ans=""
+
+    super(props)
+    for(var s in props.data)
+    {
+      ans=ans+`<li>${s} =${props.data[s]}</li>`
+     // var h="<ol>"
+      
+      console.log(s)
+    }
+    this.state={
+//res:h+ans
+     res:"<ol type='I'>"+ans+"</ol>"
+    }
+  }
+render()
+{
+
+  return(
+    <>
+    <h2>combine react + props</h2>
+    {parse(this.state.res)}
+  
+    
+    </>
+  )
+}
+}
+export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import React from "react";
+class App extends React.Component
+{
+  constructor()
+  {
+    super()
+this.state={
+
+  sno:1,
+  sname:"JayaBrindha",
+  place:"karur",
+  mark:98
+}
+
+  }
+render()
+{
+return(
+<><h1> this is class components</h1>
+<h1>Serial number:{this.state.sno}</h1>
+<h1>Student name:{this.state.sname}</h1>
+<h1>Student place:{this.state.place}</h1>
+<h1>Student Mark:{this.state.mark}</h1>
+</>
+
+)
+}
+
+}
+export default App
+
+
+
+
+/*import { aadhar, DOB, name, place } from "./mycomponents/commonvar";
+
 function App()
 {
-  var arr=[11,22,33,44,55,66,77,88,99,100]
+  return(
+    <>
+    <h1>my name is:{name}</h1>
+    <h1>my aadhar no is:{aadhar}</h1>
+    <h1>my place is:{place}</h1>
+    <h1>my Date of Birth:{DOB}</h1>
+    
+    </>
+  )
+}
+export default App
+
+
+
+/*import Brindha from "./mycomponents/Brindha"
+function App()
+{
+return(<>
+  <Brindha/>
+  <h1>This is default App components</h1>
+  
+  
+  </>
+)
+
+}
+export default App
+
+
+
+/* function App()
+{
+  var arr=[11,55,22,99,77,66,12,33,44,88]
   var sum=0
   var max=arr[0]
+  var order=arr
+  var fans=""
 return(
 
   <>
@@ -36,16 +219,45 @@ return(
 {arr.map((item)=><>{sum=sum+item}<br></br></>)}
 </div>
 <h1>Sum of array:{sum}</h1>
+
+
+
 <div style={{display:"none"}}>
 {arr.map((v)=><>{max<v&& <>{max=v}</>}
-
-
-
-</>)}
+</>)} 
 </div>
-<h1>biggest number in array:{max}</h1>
+
+ <h1>biggest number in array:{max}</h1>
+
+
+<h1>ascending order</h1>
+<div style={{display:"none"}}>{order.sort()}</div>
+{order.map((item)=><>{item},</>)}
+
+
+<h1>descending order</h1>
+<div style={{display:"none"}}>{order.sort().reverse()}</div>
+{order.map((item)=><>{item},</>)}
+
+<h1>addinng elements in an array</h1>
+<div style={{display:"none"}}>{arr.push(777)}</div>
+{arr.map((item)=><>{item} </>)}
+
+
+<h1>removing elements in an array</h1>
+<div style={{display:"none"}}>{arr.pop()}</div>
+<div style={{display:"none"}}>{arr.pop()}</div>
+
+{arr.map((item)=><>{item} </>)}
+
+
+<h2>remove last comma</h2>
+<div style={{display:"none"}}>{order.map((item)=><>{fans=fans+item+","}</>)}</div>
+{fans.slice(0,-1)}
 
  </>)
+
+
  }
 export default App
 

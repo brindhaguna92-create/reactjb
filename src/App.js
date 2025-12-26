@@ -1,5 +1,207 @@
+import React, { useState } from "react"
+import { useEffect } from "react"
+
+const App = () =>
+{
+  const[name,setName]=useState("JayaBrindha")
+  useEffect(()=>{
+document.title=`Hello! ${name}`
+})
+const show=()=>{
+
+  setTimeout(()=>{
+    setName("jayabrindha alias brindha")
+  },7000)
+}
+
+const dis=()=>{
+setName("she is studying web developement now")
+}
+  return(
+  
+  <div>
+    <h1>UseEffect Hook</h1>
+    <button onClick={show}>change name</button>
+    <button onClick={dis}>next?</button>
+    <br></br>
+    {name}
+  </div>
+  )
+}
+export default App
+/*import React from "react"
+import { useEffect } from "react"
+function App()
+{
+  useEffect(()=>{
+document.title="Brindha"
+  })
+return(<>
+<div>
+  <h1>UseEffect Hook</h1>
+</div>
+
+</>)
+}
+export default App
+
+
+
+/*import { useState } from "react"
+function App()
+{
+  const[count,setCount]=useState(0)
+  
+  const show=(event)=>
+  {
+setCount(count+1)
+  }
+  
+  return(<>
+<button onClick={show}>clicked{count}</button>
+
+  </>)
+
+}
+export default App
+
+
+
+
+
+
+/*import {seState } from "react"
+function App()
+{
+const[count,setCount]=useState(100)
+//using single function
+const show=(event)=>{
+  if(event.target.id==="b1")
+    setCount(count+1)
+  if(event.target.id==="b2")
+    setCount(count-1)
+
+    if(event.target.id==="b3")
+          setCount(count-5)
+
+
+}
+//using double function
+/*const show1=(event)=>
+{
+setCount(count+1)
+}
+const show2=(event)=>
+{
+setCount(count-1)
+}
+
+return(
+  <>
+  <button id="b1" onClick={show}>Increment by 1</button>
+  <button id="b2"onClick={show}>Decrement by 1</button>
+    <button id="b3"onClick={show}>Decrement by 5</button>
+
+  <div>{count}</div>
+  
+  </>
+)
+}
+export default App
+
+
+
+
+/*import React from 'react'
+import { useState } from 'react'
+   const App=()=> {
+const [name,setName]=useState("---")
+
+const dis=(event)=>{
+  setName(event.target.value)
+}
+const show=(v)=>{
+  console.log(v)
+}
+const find=(v1,v2)=>
+{
+  console.log(v1+v2)
+}
+  return (
+    <div>
+      <form>
+      User Name <input type='text' value={name} onChange={dis} placeholder='enter username'></input><br></br>                                                                                              5
+      Password: <input type='password' onChange={()=>show(12345)}placeholder='enter password'></input><br></br>
+      Enter Account number: <input type='number'onChange={()=>find(12,25)} placeholder='enter accno'></input><br></br>
+      Email Id: <input type='email' placeholder='enter email'></input><br></br>
+      <label>Select Gender</label>
+      <input type='radio' name='gen'></input>Male
+      <input type='radio' name='gen'></input>Female
+      <input type='radio'name='gen'></input>others <br></br>
+      <label>Select Course</label>
+      <input type='checkbox'name='c1'></input>C
+      <input type='checkbox'name='c2'></input>C++
+      <input type='checkbox'name='c3'></input>JAVA
+      <input type='checkbox'name='c4'></input>None of these<br></br>
+      <select>
+        <option>SelectMonth</option>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+
+      </select><br></br>
+      Select Color<input type='color' name='col'></input><br></br>
+      Select DOB<input type='date' name='DOB'></input><br></br>
+      Select Time<input type='time' name='time'></input><br></br>
+      Select Week<input type='week' name='week'></input><br></br>
+      <select size={4} multiple>
+      <option>Monday</option>
+      <option>tuesday</option>
+      <option>wednesday</option>
+      <option>thursday</option>
+      <option>friday</option>
+            <option>saturday</option>
+            <option>sunday</option></select><br></br>
+
+
+Upload Resume<input type='file'></input><br></br>
+<label><h4>enter your address</h4></label><br></br>
+<textarea rows={7} cols={25}></textarea><br></br>
+<label>Volume</label>
+<input type='range' min={0} max={6} defaultValue={3}></input><br></br>
+<label>Progress Bar</label>
+<progress style={{backgroundcolor:'',border:'2px solid blue' }} min="0" max="100" value={90}></progress><br></br>
+
+<font size="7">🙂🤍</font>
+<button><b>clickme</b></button>
+<input type='Submit'></input>
+</form>
+
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
 //Finding DATATYPE
-function App(props)
+/*function App(props)
 {
 var a=props.data.rno;
 var b=props.data.sname;
